@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+
+    <form id="studentForm">
+
+        <div id="form">
+
+            <h1>Student Data Portal</h1>
+
+            <label>First Name</label>
+            <input type="text" name="firstName" required>
+
+            <label>Last Name</label>
+            <input type="text" name="lastName" required>
+
+            <label>Date of Birth</label>
+            <input type="date" name="dob" required>
+
+            <label>Phone Number</label>
+            <input
+                type="tel"
+                name="phone"
+                pattern="[6-9]{1}[0-9]{9}"
+                maxlength="10"
+                placeholder="Enter Mobile Number"
+                required>
+
+            <div class="section">
+                <label>Gender</label>
+
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </div>
+
+            <div class="section">
+                <label>Disability</label>
+
+                <input type="radio" name="disability" value="Yes" required> Yes
+                <input type="radio" name="disability" value="No"> No
+            </div>
+
+            <div class="section">
+                <label>Select Class</label>
+
+                <select name="studentClass" id="studentClass" required>
+                    <option value="">Choose Class</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                    <option value="11th">11th</option>
+                    <option value="12th">12th</option>
+                </select>
+            </div>
+
+            <div class="section" id="streamSection">
+                <label>Select Stream</label>
+
+                <select id="stream">
+                    <option value="">Choose Stream</option>
+                    <option value="Science">Science</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Arts">Arts</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <label>Subjects</label>
+                <div id="subjectsContainer"></div>
+            </div>
+
+            <div class="section">
+                <label>Extra Activity</label>
+
+                <select name="activity">
+                    <option value="">Choose Activity</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Chess">Chess</option>
+                    <option value="Carrom">Carrom</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

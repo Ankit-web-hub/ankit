@@ -1,0 +1,157 @@
+/* =========================
+   RESET & GLOBAL SETTINGS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   BODY STYLING
+========================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+#container{
+    width:100%;
+    max-width:750px;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+
+#form{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+/* =========================
+   INPUT FIELDS & DROPDOWNS
+========================= */
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+/* =========================
+   FORM SECTIONS
+========================= */
+
+.section{
+    margin-bottom:20px;
+}
+
+/* =========================
+   RADIO BUTTONS & CHECKBOXES
+========================= */
+
+.section input[type="radio"],
+.section input[type="checkbox"]{
+    margin-left:10px;
+    margin-right:5px;
+}
+
+/* =========================
+   STREAM SECTION
+   Hidden by default
+   Displayed through JS
+========================= */
+
+#streamSection{
+    display:none;
+}
+
+/* =========================
+   SUBJECT CONTAINER
+========================= */
+
+#subjectsContainer{
+    line-height:2;
+    padding:10px;
+    background:#f8f9fa;
+    border-radius:8px;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    background:#007bff;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Button Hover Effect */
+
+button:hover{
+    background:#0056b3;
+}
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:600px){
+
+    /* Reduce form padding */
+    #form{
+        padding:20px;
+    }
+
+    /* Smaller heading */
+    h1{
+        font-size:24px;
+    }
+}
